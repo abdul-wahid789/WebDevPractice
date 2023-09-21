@@ -1,2 +1,7 @@
-# Finding the assignments and practice codes
-Assignments and Practice code are the sperate branch. Go through the branch to find it.
+# Book List
+This is practice project to simply add element in UI using  
+- *HTML*
+- *CSS*
+- *BootStrap 5*  
+
+To store the book used `localStorage`
