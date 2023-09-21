@@ -1,0 +1,13 @@
+.bg-primary{
+    background: #303952 !important;
+}
+.b{
+    border: 1px solid red;
+}
+.btn-primary{
+    background: #ec2b48dc !important;
+    border-color: #ec2b48dc;
+}
+.btn-search{
+    background: #48ae46 !important;
+}
