@@ -5,7 +5,7 @@ searchUi.button.addEventListener("click", ev => {
     user1 = new User()
     User.loader(true)
     fetch(`https://api.github.com/users/${userName}`)
-        .then(userInfo => { return (userInfo.json(),"x") })
+        .then(userInfo => { return (userInfo.json()) })
         .then(userInfo => {
             fetch(`https://api.github.com/users/${userName}/repos`)
                 .then(userRepo => { return userRepo.json() })
