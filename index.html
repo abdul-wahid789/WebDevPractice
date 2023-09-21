@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        .b {
+            border: 1px solid black;
+        }
+
+        .success,
+        .failed {
+            color: white;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .failed {
+            background: red;
+        }
+    </style>
+
+
+    <title>Book list</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center my-2">Add book</h3>
+        <!-- <div class="success col-12 text-center">
+            <p>Book Added</p>
+        </div> -->
+        <form action="" class="row" name="book-info">
+            <div class="col-12 mb-2">
+                <label for="book-title" class="form-label">Book Title</label> <br>
+                <input type="text" name="book-title" class="form-control" id="book-title">
+            </div>
+            <div class="col-12 col-lg-6 my-2">
+                <label for="book-author" class="form-label">Authors</label> <br>
+                <input type="text" name="book-author" class="form-control" id="book-author">
+
+            </div>
+            <div class="col-12 col-lg-6 my-2">
+                <label for="book-isbn" class="form-label">ISBN</label> <br>
+                <input type="text" name="book-isbn" class="form-control" id="book-isbn" placeholder="eg. 12345">
+
+            </div>
+            <div class="col-12">
+                <input type="submit" name="submit" id="add-book" value="Add book" class="btn btn-primary my-3">
+            </div>
+        </form>
+
+        <div class="row justify-content-center">
+            <div class="booklist-container col-sm-12 col-lg-8">
+                <table class="table">
+                    <thead>
+                        <tr scope="row">
+                            <th colspan="4" class="text-center fs-3">Book List</th>
+                        </tr>
+                        <tr scope="row">
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th colspan="2">ISBN</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                        <!-- <tr scope="row">
+                        <td>XXXX</td>
+                        <td>XXXX</td>
+                        <td>XXXX</td>
+                        <td><button  class="btn btn-danger btn-sm" id="book-delete">Delete</button></td>
+                    </tr>  
+                    <tr scope="row">
+                        <td>11111</td>
+                        <td>11111</td>
+                        <td>11111</td>
+                        <td><button  class="btn btn-danger btn-sm" id="book-delete">Delete</button></td>
+                    </tr>   -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
