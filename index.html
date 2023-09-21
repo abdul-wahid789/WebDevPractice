@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping cart</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">GoShopping</a>
+        </div>
+    </nav>
+    <div class="main mt-3">
+        <div class="cointainer">
+            <div class="row">
+                <div class="col-3">
+                    <div class="cart-container row gy-2" id="cartItemsDiv">
+                        <h4 class="text-center bg-primary text-light py-2 r-2 rounded-1">Items in cart</h3>
+                    </div>
+                    <!-- item start-->
+
+                    <!-- <div class="cart-item row px-1 " >
+                        <div class="col-sm-12 col-lg-5">
+                            <img src="assets/image/product.jpg" alt="" class="img-fluid cart-product-img">
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <p>Product Name</p>
+                            <div class="row">
+                                <div class="col-4" id="less-qt">
+                                    <i class="fa-solid fa-minus" id="less-qt" style="color: #000000;"></i>
+                                </div>
+                                <div class="col-4">
+                                    <p>12</p>
+                                </div>
+                                <div class="col-4" id="more-qt">
+                                    <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-1 my-auto p-0 d-grid">
+                            <a class="btn btn-danger btn-sm" id="cartItemDelete">
+                                <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+
+                    </div> -->
+
+                    <!-- item end -->
+                    <div class="total row mt-1">
+                        <div class="text col text-end">
+                            <strong>
+                                Total
+                            </strong>
+                        </div>
+                        <div class="col text-end">
+                            <p>
+                                <span id="total-bill">
+                                    0
+                                </span>
+                                Tk
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-9">
+                    <div class="row row-cols-2 row-cols-md-4 g-3" id="productDiv">
+                        <!-- <div class="col">
+                            <div class="card">
+                                <img src="assets/image/product.jpg" class="card-img-top img-fluid" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Title</h5>
+                                    <p class="card-text">Price: 1200</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"
+                                            style="color: #ffffff;"></i>
+                                        Add to cart</a>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
