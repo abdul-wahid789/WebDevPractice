@@ -1,0 +1,19 @@
+.b{
+    border: 1px solid black;
+}
+.list-group-item{
+    cursor: pointer;
+}
+.list-group-item:hover{
+    background: #e3e3e3;
+}
+/* #input{
+    border: 1px solid red
+}
+#input:focus{
+    border: 1px solid red;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.617)
+} */
+.bg-nav{
+    background: #e84118 !important;
+}
