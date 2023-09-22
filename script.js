@@ -1,22 +1,23 @@
 let input = false
 document.addEventListener("click", ev => {
     switch (ev.target.id) {
-        case "userName": console.log(ev.target.id)
-            showForm("Username", "text")
-            validator(/^[A-Za-z][A-Za-z0-9_]{3,29}$/, "Valid username", "Invalid username")
+        case "userName":
+            showForm("Username", "text", "abdul_wahid")
+            validator(/^[A-Za-z][A-Za-z0-9_]{3,29}$/,
+                "Valid username", "Invalid username")
             break;
-        case "email": console.log(ev.target.id)
-            showForm("Email", "email")
+        case "email":
+            showForm("Email", "email", "abdulwahid.contact@gmail.com")
             validator(/^[a-zA-Z0-9]+([\._\+-][a-zA-Z0-9]+)*@([a-zA-Z0-9]+)([\._\+-][a-zA-Z0-9]+)+$/,
                 "Valid Email", "Invalid Email")
             break
         case "phoneNumber":
-            showForm("Phone number", "tel")
+            showForm("Phone number", "tel", "01849450075")
             validator(/^(\+8801|01)[356789][0-9]{8}$/,
                 "Valid number", "Invalid number")
             break
         case "postalCode":
-            showForm("Postal Code", "number")
+            showForm("Postal Code", "number", "1340")
             validator(/^[0-9]{4}$/,
                 "Valid", "Invalid")
             break
@@ -35,7 +36,7 @@ function showCustomField() {
         document.getElementById("inputDiv").remove()
     }
     inputDiv = `  <div class="row" id="inputDiv">
-    <div class="my-5 row justify-content-center">
+    <div class="mt-5 mb-2 row justify-content-center">
         <label for="staticEmail" class="col-3 col-lg-1 col-form-label">Expression</label>
         <div class="col-9 col-lg-3">
             <input type="text" class="form-control" id="expressionInput" placeHolder="eg. ^[0-9]{4}$">
@@ -55,18 +56,18 @@ function showCustomField() {
     parent.innerHTML += inputDiv
 }
 
-function showForm(name, type) {
+function showForm(name, type, placeHolder) {
     parent = document.getElementById("main")
 
     if (input) {
         document.getElementById("inputDiv").remove()
     }
     inputDiv = `        <div class="row g-3 align-items-center justify-content-center mt-5" id="inputDiv">
-    <div class="col-auto">
+    <div class="col-2 col-lg-auto">
         <label for="input" class="col-form-label" id="inputLabel">${name}</label>
     </div>
-    <div class="col-auto">
-        <input type=${type} id="input" class="form-control">
+    <div class="col-8 col-lg-3">
+        <input type=${type} id="input" class="form-control" placeholder="eg. ${placeHolder}">
     </div>
     <div class="col-auto">
         <span id="inputHelpInline" class="form-text">
@@ -79,22 +80,25 @@ function showForm(name, type) {
 }
 
 function getExpression() {
-    let re = document.getElementById("expressionInput").value
-    re = new RegExp(re);
+    let re = document.getElementById("expressionInput")
+    if (re != null)
+        re = new RegExp(re.value);
     return re
 }
 
 function validator(re, valid, inValid) {
     document.getElementById("input").addEventListener("keyup", ev => {
-        re = getExpression()
+        let customRe = getExpression()
+        if (customRe != null) {
+            re = customRe
+            console.log(re)
+        }
         let val = document.getElementById("input").value.trim()
         if (!re.test(val)) {
             document.getElementById("input").style.border = "1px solid red";
             document.getElementById("input").style.boxShadow = "0 0 0 0.25rem rgba(255, 0, 0, 0.617)"
             document.getElementById("inputHelpInline").innerHTML = inValid
             document.getElementById("inputHelpInline").style.color = "#dc3545"
-            console.log(val)
-
 
         } else {
             document.getElementById("input").style.border = "";
