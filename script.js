@@ -63,7 +63,7 @@ function showForm(name, type, placeHolder) {
         document.getElementById("inputDiv").remove()
     }
     inputDiv = `        <div class="row g-3 align-items-center justify-content-center mt-5" id="inputDiv">
-    <div class="col-2 col-lg-auto">
+    <div class="col-3 col-lg-auto">
         <label for="input" class="col-form-label" id="inputLabel">${name}</label>
     </div>
     <div class="col-8 col-lg-3">
