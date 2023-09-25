@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guesser Game</title>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-dark bg-yellow  ">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                Number Guesser Game
+            </div>
+        </div> -->
+    </nav>
+    <div class="container position-absolute top-50 start-50 translate-middle ">
+        <div class="row justify-content-center mb-5" id="game-container">
+            <div class="col-11 col-lg-4 text-center feedback-container">
+                <div class="row justify-content-center mx-2">
+                    <p class="py-3 result rounded-5 bold-style name">Number gussing game</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <p class="py-3 result rounded-5 bold-style">
+                        <i class="fa-solid fa-heart" style="color: #320E3B;"></i>
+                        Chances left: <span id="chance">3</span>
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-11 col-lg-4  feedback-container py-5">
+                    <div class="row justify-content-center pb-4">
+
+                        <p class="result rounded-5 bold-style text-center" id="feedback">
+                            
+                        </p>
+                    </div>
+                    <div class="">
+                        <label for="number" class="form-label ">Enter your gussed number</label>
+                        <input type="number" name="number" id="number" class="form-control" placeholder="1 - 10">
+                    </div>
+                    <div class="row justify-content-center mt-4 px-0">
+                        <div class="col-5">
+                            <button class="w-100 btn btn-danger" id="reset">
+                                <i class="fa-solid fa-rotate" style="color: #ffffff;"></i>
+                                Restart</button>
+                        </div>
+                        <div class="col-5">
+                            <button class="w-100 btn btn-perple" id="guess">Guess</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- <div class="row my-5 justify-content-center">
+            <div class="col-3 text-center b py-3 result rounded-5">
+                <h4>Correct number</h4>
+            </div> -->
+
+    </div>
+
+
+    <script src="js/ui.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
