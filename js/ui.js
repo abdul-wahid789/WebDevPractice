@@ -62,19 +62,19 @@ class Products {
     static removeFromCart(item) {
         item = item.parentElement.parentElement
         item.remove()
-        let price=(item.
+        let price = (item.
             children[1].
             children[1].
             children[1].
             firstElementChild.
             firstElementChild.textContent)
-        let quantity=(item.
+        let quantity = (item.
             children[1].
             children[1].
             children[1].
             firstElementChild.
             children[1].textContent)
-        return {"price":price,"quantity":quantity}
+        return { "price": price, "quantity": quantity }
     }
     static updateBill(num) {
         let billElement = document.getElementById("total-bill")
@@ -125,6 +125,12 @@ class Products {
             firstElementChild.
             children[1]
 
+        let price = cartItem.
+            parentElement.
+            parentElement.
+            children[1].
+            firstElementChild.firstElementChild.textContent
+
         let n = parseInt(quantity.textContent) - 1
         if (n > 0) {
             quantity.textContent = n
@@ -135,11 +141,6 @@ class Products {
                 firstElementChild.
                 children[1].textContent
 
-            let price = cartItem.
-                parentElement.
-                parentElement.
-                children[1].
-                firstElementChild.firstElementChild.textContent
             this.updateBill(-price)
             // return { "price": price, "quantity": quantity }
         }
@@ -147,9 +148,6 @@ class Products {
             this.removeFromCart(cartItem.parentElement.parentElement)
             this.updateBill(-price)
         }
-
-
-
 
     }
 

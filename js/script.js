@@ -29,15 +29,8 @@ document.addEventListener("click", ev => {
         
 
     } else if (product.id === "less-qt") {
-        // console.log(product.
-        //     parentElement.
-        //     parentElement.
-        //     children[1].
-        //     firstElementChild.
-        //     children[1])
-        let item=Products.cartItemQuantityLess(product)
-        // console.log(item)
 
+        let item=Products.cartItemQuantityLess(product)
 
     } else if (product.id === "more-qt") {
         
