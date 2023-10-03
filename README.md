@@ -6,4 +6,4 @@ This is practice project to find github user using gitpub api.
     - *CSS*
     - *BootStrap 5*  
 Use this command to clone this repo  
-`git clone https://github.com/abdul-wahid789/Github-Finder`
+`git clone -b Github-Finder https://github.com/abdul-wahid789/WebDevPractice.git`
