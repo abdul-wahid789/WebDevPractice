@@ -1,5 +1,13 @@
-# Finding the assignments and practice codes
-Assignments and Practice code are the sperate branch. Go through the branch to find it.
-
-To clone any branch  
-`git clone -b <Branch-Name> https://github.com/abdul-wahid789.git`
+# GPA Calculator  
+The program takes `4` input from the user and then calculates the average number. Grade calculated according to this table
+| Result | Grade  |
+|-------|--------|
+|  0-40  |   F    |
+| 41-60 |   D    |
+| 61-70 |   C    |
+| 71-80 |   B    |
+| 81-90 |   A    |
+| 91-100|   A+   |  
+  
+To clone this repo  
+`git clone -b py--GPA-Calculator https://github.com/abdul-wahid789/WebDevPractice.git`
