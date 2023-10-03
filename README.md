@@ -3,4 +3,4 @@ This the correct number is set by using `randint` method from `random` library. 
 After winning or lossing the game player can restart the game by pressing `Y` or `y` either will work.
 
 To clone any branch  
-`git clone -b <py--Number-Guesser> https://github.com/abdul-wahid789.git`
+`git clone -b py--Number-Guesser https://github.com/abdul-wahid789.git`
