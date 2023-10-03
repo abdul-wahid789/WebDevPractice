@@ -9,5 +9,5 @@ The program takes `4` input from the user and then calculates the average number
 | 81-90 |   A    |
 | 91-100|   A+   |  
   
-To clone this repo  
+To clone this branch  
 `git clone -b py--GPA-Calculator https://github.com/abdul-wahid789/WebDevPractice.git`
